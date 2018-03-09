@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd $(dirname $0)/../..
+
+set -x
+docker run -v $PWD/..:/code -p '0.0.0.0::9103' -p '0.0.0.0::9104' -w /code/src --tty nanocashcoin/base ./nanocashcoind "$@"
+

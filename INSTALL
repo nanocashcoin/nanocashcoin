@@ -1,0 +1,9 @@
+Building Nanocashcoin
+
+See doc/readme-qt.rst for instructions on building Nanocashcoin-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Nanocashcoin.
+
+See doc/build-*.txt for instructions on building nanocashcoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of Nanocashcoin.

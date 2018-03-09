@@ -1,0 +1,49 @@
+src/*.exe
+src/nccoin
+src/nanocashcoin
+src/nccoind
+src/nanocashcoind
+src/test_nccoin
+src/test_nanocashcoin
+.*.swp
+*.*~*
+*.bak
+*.rej
+*.orig
+*.o
+*.patch
+.nccoin
+.nanocashcoin
+
+# Compilation and Qt preprocessor part
+*.qm
+Makefile
+nccoin-qt
+nanocashcoin-qt
+NCCoin-Qt.app
+Nanocashcoin-Qt.app
+.qmake.stash
+nanocashcoin-qt_plugin_import.cpp
+
+# Unit-tests
+Makefile.test
+nccoin-qt_test
+nanocashcoin-qt_test
+
+# Resources cpp
+qrc_*.cpp
+
+# Qt creator
+*.pro.user
+
+# Mac specific
+.DS_Store
+build
+
+# mingw / Windows
+release/
+*.Debug
+*.Release
+
+!src/leveldb-*/Makefile
+nanocashcoin-qt

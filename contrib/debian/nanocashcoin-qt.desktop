@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Nanocashcoin
+Comment=Core wallet for Nanocashcoin P2P Cryptocurrency
+Comment[de]=Offizieller Client für die Kryptowährung Nanocashcoin
+Exec=/usr/bin/nanocashcoin-qt %u
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/nanocashcoin.png
+MimeType=x-scheme-handler/nanocashcoin;
+Categories=Application;Network;
