@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.6.0
+!define VERSION 0.6.1
 !define COMPANY "Nanocashcoin project"
 !define URL http://github.com/nanocashcoin/nanocashcoin/
 
@@ -51,7 +51,7 @@ CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 0.6.0.0
+VIProductVersion 0.6.1.0
 VIAddVersionKey ProductName Nanocashcoin
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
