@@ -37,7 +37,7 @@ unsigned int nTransactionsUpdated = 0;
 map<uint256, CBlockIndex*> mapBlockIndex;
 set<pair<COutPoint, unsigned int> > setStakeSeen;
 uint256 hashGenesisBlock = hashGenesisBlockOfficial;
-static CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
+static CBigNum bnProofOfStakeLimit(~uint256(0) >> 31);
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 31);
 static CBigNum bnInitialHashTarget(~uint256(0) >> 32);
 unsigned int nStakeMinAge = STAKE_MIN_AGE;
