@@ -405,7 +405,7 @@ double MintingTableModel::getDayToMint(KernelRecord *wtx) const
     double difficulty = p->GetBlockDifficulty();
 
     double prob = wtx->getProbToMintWithinNMinutes(difficulty, mintingInterval);
-    prob = prob * 100;
+    //prob = prob * 100;
     return prob;
 }
 

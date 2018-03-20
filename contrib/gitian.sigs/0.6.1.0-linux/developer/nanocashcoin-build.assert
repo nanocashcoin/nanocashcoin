@@ -2,18 +2,18 @@
 - out_manifest: |
     185f7c3bb16e6fb9addc11d3f7148919818d71446121a8b262b162e102dd8dca  COPYING
     12b972b2221744dc440f46b1effe44ca55c54e602b1b7f4e081b2f227ed641db  README.md
-    6189a5c0c158b2a8daed5a9b387e4253d370f3682bf4efb160fc799ca431dc22  bin/32/nanocashcoin-qt
-    fabce36e622ab427ca8dee45683d6298d3204e2bf695b859547dab41f8b23ccd  bin/32/nanocashcoind
-    176b066ae0ca69717798925a1f9fc1741933a874b79865d6b2c2cae328cce974  bin/64/nanocashcoin-qt
-    4195b70ee796fc4e89b27dd7fe67a531ba97faa664f3501b0d5da52816a2e337  bin/64/nanocashcoind
-    34e9f10ef0c56818741bddbafc6ee6a5c9f10f1560ea7f765983c3e2c78ab7e8  src/nanocashcoin.tar.gz
+    c211c7c746d9dfe2ab4ff701f8007ac420f670491f9b436c88378a7ede4310a6  bin/32/nanocashcoin-qt
+    7863671b8366ea2386dc298adffee4ab71d54b893ee37300fcd26127a2b6cf95  bin/32/nanocashcoind
+    78341ea2e3caefece5c277f93110d9e370384849a2a7ddc9c1faa3483c50d675  bin/64/nanocashcoin-qt
+    1ac8e561ddd3ed2d48366dbaca80850816a99b21f18d505edcb740864a73829e  bin/64/nanocashcoind
+    b96ccde195e47a27c065196cd76e30eca048f9b63e60e8ebb60da67ea53b3777  src/nanocashcoin.tar.gz
 - in_manifest: |-
     206e64da27f58efb8fee404bc4c39254033802ba24ecf56452f99529b0a7674c  nanocashcoin-desc.yml
     5af2be38e92c15fc86bb2bb352018f8253e0d6ac7a355c68f04553d7fa4c7f1a  nanocashcoin-deps-linux32-gitian-r1.zip
     30d3bb9ecbc91a3248680a0715188f748db963ad0de3bebde4ec4c8dc071389f  nanocashcoin-deps-linux64-gitian-r1.zip
     f29b7d9577417333fb56e023c2977f5726a7c297f320b175a4108cf7cd4c2d29  boost-linux32-1.55.0-gitian-r1.zip
     88232451c4104f7eb16e469ac6474fd1231bd485687253f7b2bdf46c0781d535  boost-linux64-1.55.0-gitian-r1.zip
-    git:5121d147d026fd4f473aae12c49a6f2fb30b2538 nanocashcoin
+    git:b0dd38c373fa25ee527bac0fe140b33a5591a74b nanocashcoin
 - base_manifests: !omap
   - precise-i386: |
       5ebcb985ca600ff8028dd67afb6cdd03ebb375fa8d6b46a8f337ef37b68828d5  accountsservice_0.6.15-2ubuntu9.7_i386.deb
@@ -1051,7 +1051,7 @@
       46e68ab922ba0b8d29f1b6360fe1551eaed878336e0c13ed61d886704cd749d8  zlib1g-dev_1%3a1.2.3.4.dfsg-3ubuntu4_amd64.deb
 - cache_common_manifest: ''
 - cache_package_manifest: ''
-- release: 0.6.1-linux
+- release: 0.6.1.0-linux
 - name: nanocashcoin
 - type: build
 - optionals: 

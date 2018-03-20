@@ -62,8 +62,8 @@ MintingView::MintingView(QWidget *parent) :
     mintingCombo = new QComboBox();
     mintingCombo->addItem(tr("10 min"), Minting10min);
     mintingCombo->addItem(tr("24 hours"), Minting1day);
-    mintingCombo->addItem(tr("3 days"), Minting3days);
-    mintingCombo->addItem(tr("5 days"), Minting5days);
+    mintingCombo->addItem(tr("30 days"), Minting30days);
+    mintingCombo->addItem(tr("90 days"), Minting90days);
     mintingCombo->setFixedWidth(120);
 
 
@@ -160,11 +160,11 @@ void MintingView::chooseMintingInterval(int idx)
         case Minting1day:
             interval = 60*24;
             break;
-        case Minting3days:
-            interval = 60*24*3;
+        case Minting30days:
+            interval = 60*24*30;
             break;
-        case Minting5days:
-            interval = 60*24*5;
+        case Minting90days:
+            interval = 60*24*90;
             break;
     }
     model->getMintingTableModel()->setMintingInterval(interval);

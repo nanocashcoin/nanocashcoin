@@ -1,7 +1,7 @@
 --- !omap
 - out_manifest: |
     185f7c3bb16e6fb9addc11d3f7148919818d71446121a8b262b162e102dd8dca  COPYING.txt
-    095b29f920363f949a598010043ec524086b38b99ac9f28125b7962ba914c738  Nanocashcoin-Qt.dmg
+    5c93f00bdbc88a38d05e8d549bfed7c2c5f71d8ee4964efb7a089072d476ee64  Nanocashcoin-Qt.dmg
     12b972b2221744dc440f46b1effe44ca55c54e602b1b7f4e081b2f227ed641db  readme.txt
     11f006809d8da1021bb9cdcc8f4e824e16d37ed79801100044ceba2caaf0eedf  src/.gitattributes
     68f240aa20dcefa25ab5062be5f63d0c9f9220589dac42ad13c9d7d23a648332  src/.gitignore
@@ -70,6 +70,9 @@
     cbb7ad420515cc46d874fc3c7a1f2834e0d374db96edd6e1284fcad0bd75eb24  src/contrib/gitian-downloader/win32-download-config
     07c95e99046c7554cfce39f4a300329770b259350e3cf033ada7f79430b101d4  src/contrib/gitian-downloader/wtogami-key.pgp
     1e82b1171ffc3a3aab67a33a7e5b7c5d42498fd94a9737dfd3efcfb7f3ad68a2  src/contrib/gitian-keys/keys.txt
+    ee997c7c49566ae3da03532a934003845c8b4fb8308ecba982abc938dd42e266  src/contrib/gitian.sigs/0.6.1-linux/developer/nanocashcoin-build.assert
+    022e0ae2db5a814955a152f7c300f49ad18a866e3f2fe4f448e9a820b847bfe8  src/contrib/gitian.sigs/0.6.1-osx-unsigned/developer/nanocashcoin-build.assert
+    1772532edc83120d13dc02efd0be31ae659cc2e0b90d90faac94e3cef1e190e0  src/contrib/gitian.sigs/0.6.1-win-unsigned/developer/nanocashcoin-build.assert
     93b6dedefe70c40587a51602464249991e07cf68ae9cdb21e5799b8679bd05c8  src/contrib/homebrew/bitcoin.qt.pro.patch
     5d49268b2af280ecf51cb3c2ca4f82798997d3bcb875d40d7f72032c7d99a47a  src/contrib/homebrew/makefile.osx.patch
     8423b6c87f2c21ef317533af97aae5e52cd456673768fa934830a181475cc9a1  src/contrib/macdeploy/DS_Store
@@ -171,7 +174,7 @@
     86cfc95409d9a7f4808b7230c46deb574f0d4294d20aed69bb4a7ea2453de95f  src/src/checkpointsync.cpp
     8a149a06776760c37f341cb8bbefc5e62261e76212f4d6f80cd3645e75f607f7  src/src/checkpointsync.h
     1a0caede06760890a11e7263c1cdc2c7a4be4d035053b9a871ed3b880a142ae7  src/src/checkqueue.h
-    a70f1d94f78b4c84b5e75375b60e3d803a4bc0dd52f77aebe93f19df6b9c3b01  src/src/clientversion.h
+    7658285d2baf70844b51233fb797a0289fbc8b03e0a421c5f883328b525442d5  src/src/clientversion.h
     cac8424bf194ae7c1e8764852352b7b347bcf96a0b6c721a27a7335fe6fcf8cb  src/src/coincontrol.h
     de95871bf66ee6eb61d64ee157d445604fb0f1964f6a1041c85bbf63ad6354f3  src/src/compat.h
     ed166cda33489767e3be658b9ab332a2352b6a83c6250495de22f97b68f020f7  src/src/crypter.cpp
@@ -195,7 +198,7 @@
     16b0123375012f07621e163002fccd6b5ed78e1029604af8bd49a4aadba2f131  src/src/json/json_spirit_writer.cpp
     28d5f9a32fe2492bddab66e411659f48fc385c7162fbff4fd3a92b9d18181d2d  src/src/json/json_spirit_writer.h
     2f769e18077751901c33772c99ed8d9b9a55ce242a1f3bd50167ab630e89443f  src/src/json/json_spirit_writer_template.h
-    9673c3f57d9a4311e9bf1688b9e246a7a8dc7882a8e5163291bbdd7e7c85e86b  src/src/kernel.cpp
+    15b1726a58820feb8bc654ee22ee11791a8e4e652d110edb953b1368e4b1546b  src/src/kernel.cpp
     7d16cd58d4908058b256929c8dbf22b220de619197c261792292407519ae1c45  src/src/kernel.h
     a3b4e28a28d5d26e15291a85e12f18350748c1e9081da03069b4147a315a81b3  src/src/kernelrecord.cpp
     e9bb0d1e064ffecf5f344a43701fdd7238368c49681ce8477630ce7f59c01a47  src/src/kernelrecord.h
@@ -344,7 +347,7 @@
     0a73c868bd45d0f671a30a9c5a4770b781b87339336b191bddb91ab12a8696d1  src/src/leveldb/util/testutil.h
     3e7feacf9c803068fa6ad211d4f6279b2ea370f285f06a82f1566544d0bd304d  src/src/limitedmap.h
     384235972a8a87c4ce15f565bc33d46d45688eb6fa2c8d198565d1bc445258c9  src/src/main.cpp
-    e39d7244cf5401aa4eadfb1b0b6cdd2e8405fa2b1db0890faaad68f3b9eaf023  src/src/main.h
+    63b2a1fdd1eb9d2bd94108c51b7e28a4d1326090eac882d02b9f14eadd29c9fd  src/src/main.h
     038fb1881615ada55ce600920571abbdb69c0cf7a88a9299ca9c17b6e20500f3  src/src/makefile.linux-mingw
     1e38f00b12b287ce860b32704b039d229f09d83f9a7d6c58d809f2300110e19c  src/src/makefile.mingw
     2f9f04d0eaed12b34fa01e7791621c1ab1970eb91484f9780caf6fd6e6417cf3  src/src/makefile.osx
@@ -456,10 +459,10 @@
     ccfb5e17c99f501c5d2fc07bdf7a7250ba7eef45862d8dfe79adfa998fd22ebf  src/src/qt/macdockiconhandler.mm
     50f0f422b58a9cf5314f665385c6b4a324f5784735c3fd3684e048f51f9e4434  src/src/qt/mintingfilterproxy.cpp
     9388e845f4dd3f788c78139bb8422eb67d5118c66c1d7976aae21bcebd1b2fed  src/src/qt/mintingfilterproxy.h
-    34fa929d668d2ed2fb8ee385edaeca24ae463e929dd8f618263124d5977a7d4a  src/src/qt/mintingtablemodel.cpp
+    d4a74b3c9282d8c98187e8a728b2a1e5afec98f7d079f87287117c76843aa2aa  src/src/qt/mintingtablemodel.cpp
     d73fe53bab338102659282aa201f98c86a1f57ecaabb05eeae6cfa5a9a7ed44e  src/src/qt/mintingtablemodel.h
-    35e467e86c427ba21b4972871cd4c1ee7d752b223c397df010bf26d9e907239e  src/src/qt/mintingview.cpp
-    01f2eaf33c90dfa78095463c7d21b9a616cc27b45cbbed300594cc8b0ab69367  src/src/qt/mintingview.h
+    4b61edd17759ae9376eddbf8ad415f21ddaba54395ecd902246a57be2defce52  src/src/qt/mintingview.cpp
+    1a7840249f8616336487186f783b7544bf3571bd7fdc6b8a4edf44cd2656c5b2  src/src/qt/mintingview.h
     5605fc3491bd94f1252ca89135c03e4f552b55ced040b1367d0e9752e16d04ad  src/src/qt/monitoreddatamapper.cpp
     77545b3b9893ad79af359021c1f36add61e0e77462927e709fc6ef1dedf9f4d7  src/src/qt/monitoreddatamapper.h
     cd253290436be467f97d089caf2bdaad22d08238041bbf1ec0c09cc317135ad8  src/src/qt/notificator.cpp
@@ -478,7 +481,7 @@
     2fc139b4b224ff5765e99df18e659cde0cdf05c01e0461ca65f9b8af6413a4f5  src/src/qt/qvalidatedlineedit.h
     eca163dda99fbee4f5e132bd9c2e05cbfd708b20321b8351d7b0595c64951f46  src/src/qt/qvaluecombobox.cpp
     f1a1241569e104be01964031275456cdd023ec9fa77d73cd7b3c16fd0aa2141e  src/src/qt/qvaluecombobox.h
-    8249429d0bf67e7a1ad6b68d32b182e5cfd4a722f14f8ef1b4101474ca8d4f06  src/src/qt/res/bitcoin-qt.rc
+    6294699c66f8adeabb36f9ffd29fb7c63afeccc88fe0a343cbf3b18d4fe54694  src/src/qt/res/bitcoin-qt.rc
     971337b824815dd39c80ded709be04c2d294d56aca17a7c4d897b8849134d113  src/src/qt/res/fonts/WeblySleek.ttf
     a263dc97d2d802b687a7227db76cf4937533e2ea796c32c400e8703e354bb1f9  src/src/qt/res/icons/add.png
     61e89f95af0ba509984c288962ab653c46ae29cb830bb6fd8e4e33175b38201b  src/src/qt/res/icons/address-book.png
@@ -671,7 +674,7 @@
     ff78c940d78f954649607d960719ada9992892b1e21b48fd0dd01b291bff730b  src/src/uint256.h
     eb19aa7649c39f0d98cce20461efdf3aa5301ef1f257ac7fde7b64fe4e5d4880  src/src/util.cpp
     032761e149890fed4b7aac6e15df46fdf8324dc70bc3f5145fc47eb507a3f3fb  src/src/util.h
-    ac29a3425dfa075aca367c284efbaae2d48067f44a264e6c97d111f1b09ec057  src/src/version.cpp
+    087aa052300fc842b4086b90f58bbea4083191e1d66ae2beb11ca5897b216b94  src/src/version.cpp
     b198999e197f9cb01cb80b94db7b3b6aae47deca1291ced15614c164a526167e  src/src/version.h
     af1f813f6f191481e7f250b899cc9883b70686a37b9d08ccfbca70b27591f8e9  src/src/wallet.cpp
     965be83b1eb9d24585ba864c42a8e25c98249678965b7a9b0e45601019695e90  src/src/wallet.h
@@ -682,7 +685,7 @@
     cf5e5c8704824e83f1eb8fa480e84ad240aa2aa391ad0a4aee73943e2a32d1b0  qt-osx-5.5.0-gitian.tar.xz
     12055987424152db9b5034f752071865da4c586df2b4b1013cf62046703b97b4  nanocashcoin-deps-osx-gitian-r1.tar.xz
     6ec5b0e1ed208813fde90894cf4e483d208fb052c13d7ce0a364be1fa7bd2e91  osxcross.tar.xz
-    git:5121d147d026fd4f473aae12c49a6f2fb30b2538 nanocashcoin
+    git:b0dd38c373fa25ee527bac0fe140b33a5591a74b nanocashcoin
 - base_manifests: !omap
   - trusty-amd64: |
       a7ca9f22df6e91ae67a5ec1d7f83734fa9dbb103ec2d62d65397a40a416d78a3  accountsservice_0.6.35-0ubuntu7.3_amd64.deb
@@ -1075,6 +1078,7 @@
       9ee2b3d7653aa154ce15b0858327a6b11cf30b2558607bff56f4d4aae479eafd  libtext-soundex-perl_3.4-1build1_amd64.deb
       d57a4cb602c011ffa5fabbcdfd84e3a922654780e0fdee21735ad2aaf09edb0e  libtext-wrapi18n-perl_0.06-7_all.deb
       722a7c137f076e100e12cfc87141a1bcaf7ccaeb1829b6b4654d3cbe58edcc16  libtiff5_4.0.3-7ubuntu0.7_amd64.deb
+      af78e9934cfb36ce52fe191ec2443fb1d021d01a18ea5afc95f14d0c676c0da3  libtiff5_4.0.3-7ubuntu0.8_amd64.deb
       153481e7fb5e46873fa1d22f0f9cdbf92ccdab0fbc980ceaa373a784d592b12a  libtimedate-perl_2.3000-1_all.deb
       46af44d6a36fae9d1cc914a503c019cbea0ded17e71cebdc26e272b2428f5f90  libtinfo5_5.9+20140118-1ubuntu1_amd64.deb
       80014537547e3b321e0e6d6770ae60eeb9ef4848de18ee5f13b75de7a79fd830  libtinfo-dev_5.9+20140118-1ubuntu1_amd64.deb
@@ -1336,7 +1340,7 @@
       d44332327123a4fef16ededcffac98ac0425402f9c2ccc8e42193b122f8a54b8  zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb
 - cache_common_manifest: ''
 - cache_package_manifest: ''
-- release: 0.6.1-osx-unsigned
+- release: 0.6.1.0-osx-unsigned
 - name: nanocashcoin
 - type: build
 - optionals: 

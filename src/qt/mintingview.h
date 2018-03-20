@@ -24,8 +24,8 @@ public:
     {
         Minting10min,
         Minting1day,
-        Minting3days,
-        Minting5days
+        Minting30days,
+        Minting90days
     };
 
 private:

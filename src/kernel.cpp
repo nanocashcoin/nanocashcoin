@@ -29,6 +29,9 @@ const unsigned int nProtocolV06TestSwitchTime = 1508198400; // Tue 17 Oct 00:00:
 const unsigned int nProtocolV06aSwitchTime     = 1519827300; // Thu 28 Feb 14:15:00 UTC 2018
 const unsigned int nProtocolV06aTestSwitchTime = 1519827300; // Thu 28 Feb 14:15:00 UTC 2018
 
+const unsigned int nProtocolV06bSwitchTime     = 1521547200; // 20 Mar 12:00:00 GMT 2018
+const unsigned int nProtocolV06bTestSwitchTime = 1521547200; // 20 Mar 12:00:00 GMT 2018
+
 // Modifier interval: time to elapse before new modifier is computed
 // Set to 6-hour for production network and 20-minute for test network
 unsigned int nModifierInterval = MODIFIER_INTERVAL;
@@ -78,9 +81,17 @@ bool IsProtocolV06(const CBlockIndex* pindexPrev)
   return false;
 }
 
-bool IsProtocolV06a(unsigned int nTimeCoinStake)
+int64 GetStakeAgeMaximum(unsigned int nTimeCoinStake)
 {
-    return (nTimeCoinStake >= (fTestNet? nProtocolV06aTestSwitchTime : nProtocolV06aSwitchTime));
+	if((fTestNet? nProtocolV06aTestSwitchTime : nProtocolV06aSwitchTime) > nTimeCoinStake){
+		return PREV6a_STAKE_MAX_AGE;
+	}
+
+	if((fTestNet? nProtocolV06bTestSwitchTime : nProtocolV06bSwitchTime) > nTimeCoinStake){
+		return PREV6b_STAKE_MAX_AGE;
+	}
+	
+    return STAKE_MAX_AGE;
 }
 
 // Get the last stake modifier and its generation time from a given block
@@ -412,8 +423,10 @@ bool CheckStakeKernelHash(unsigned int nBits, const CBlockHeader& blockFrom, uns
     // v0.3 protocol kernel hash weight starts from 0 at the 30-day min age
     // this change increases active coins participating the hash and helps
     // to secure the network when proof-of-stake difficulty is low
+
     //int64 nTimeWeight = min((int64)nTimeTx - txPrev.nTime, (int64)STAKE_MAX_AGE) - (IsProtocolV03(nTimeTx)? nStakeMinAge : 0);
-    int64 nTimeWeight = min((int64)nTimeTx - txPrev.nTime, (IsProtocolV06a(nTimeTx)? (int64)STAKE_MAX_AGE : (int64)PREV6a_STAKE_MAX_AGE)) - (IsProtocolV03(nTimeTx)? nStakeMinAge : 0);
+    int64 nTimeWeight = min((int64)nTimeTx - txPrev.nTime, GetStakeAgeMaximum(nTimeTx)) - (IsProtocolV03(nTimeTx)? nStakeMinAge : 0);
+
     CBigNum bnCoinDayWeight = CBigNum(nValueIn) * nTimeWeight / COIN / (24 * 60 * 60);
     // Calculate hash
     CDataStream ss(SER_GETHASH, 0);
