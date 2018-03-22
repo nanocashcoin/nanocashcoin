@@ -1,14 +1,14 @@
 --- !omap
 - out_manifest: |
-    299efeadad5b9907054d6413fce5dc09ecc5c1dfbd25ac729bfbfe64e7188cc2  32/nanocashcoin-0.6.1-setup.exe
-    48d96c57935b06753343aa94dc261016f646156d2a5e6334d46e95f6177cb95f  32/nanocashcoin-qt.exe
-    a55c1046aafc2034529b6842205e51531f55e04cd6edc9a49aa6c438a448f295  32/nanocashcoind.exe
-    a03abc605016ef8f3a629c17275db58f1c7a8cd8ae216fc5ccc517378a2fcc18  64/nanocashcoin-0.6.1-setup.exe
-    d5816812f6d762b136fd5f9052a864e81f0a165eadc1a8a952d91cf4255fbf9a  64/nanocashcoin-qt.exe
-    dd18146ff49874f3355063a7bcdb09ad22160abd5c35cd92cab4c55d9d50233a  64/nanocashcoind.exe
+    118133031d664493d9a071ef5f9f1c4ea973c15ef6570f8d6c0f831dcfea32b6  32/nanocashcoin-0.6.1-setup.exe
+    8ec9c5c0a37eeff0c1e1243a49376f3dbf9a92edde723d73d3549cba4e5b03ed  32/nanocashcoin-qt.exe
+    96a27cc84853ce51d8cab57879127af001b3974dfe4be16197af9b21ce9dd26d  32/nanocashcoind.exe
+    bba316630d3a14d53a4034cd04b66612c7a20b5891e345b29169320042b83ae4  64/nanocashcoin-0.6.1-setup.exe
+    ec1c20f2a221d9c522939cc3e8a8ae2ec4c0142aaec829d47a8549c31ddac713  64/nanocashcoin-qt.exe
+    051d58905f93af8427b7726acdd4f2bc0b4fc5251946f1099ffebb572b4f2bb4  64/nanocashcoind.exe
     185f7c3bb16e6fb9addc11d3f7148919818d71446121a8b262b162e102dd8dca  license.txt
     6adfe8c05c0518e1fb25311f970ccb7eae17e1ed7b807c8f5361f77a95a98e2d  readme.txt
-    67a724b6621865362842132d2e73b83965ca33c368218b5de0e67333f2a42ccc  src/nanocashcoin.tar.gz
+    c13a320ee12f5e785b4055a855e86049203fa78fac991ce14bb4be356472769e  src/nanocashcoin.tar.gz
 - in_manifest: |-
     42fbab39e4470a5d62eecc85494f711037f7998b73c986df7cda89c006372544  nanocashcoin-desc.yml
     574abb6bfde6dc721b5dc040954a61fdc299ad8a34eec6df46707e7cbb965640  qt-win32-4.8.5-gitian-r1.zip
@@ -17,7 +17,7 @@
     f65fcaf346bc7b73bc8db3a8614f4f6bee2f61fcbe495e9881133a7c2612a167  boost-win64-1.55.0-gitian-r1.zip
     e877d1ca7da176bc19e622bb894d61722df8b12d0c49751279ecc61b4ce471ed  nanocashcoin-deps-win32-gitian-r1.zip
     0bfa9d07cc73f9957ddb250353f0dc1eeb701fa5ba414ae1e8d260c15fa2db50  nanocashcoin-deps-win64-gitian-r1.zip
-    git:b0dd38c373fa25ee527bac0fe140b33a5591a74b nanocashcoin
+    git:1d9256ab2a2d9866eb19e31ba108739cd74d9a4c nanocashcoin
 - base_manifests: !omap
   - precise-amd64: |
       9a5025bf74860c93e7e452bc2c647191fdb5ecab0aca77da2690e1c4dbe9486e  accountsservice_0.6.15-2ubuntu9.7_amd64.deb

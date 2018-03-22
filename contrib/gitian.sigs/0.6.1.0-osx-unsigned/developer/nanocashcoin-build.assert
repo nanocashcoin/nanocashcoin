@@ -1,7 +1,7 @@
 --- !omap
 - out_manifest: |
     185f7c3bb16e6fb9addc11d3f7148919818d71446121a8b262b162e102dd8dca  COPYING.txt
-    5c93f00bdbc88a38d05e8d549bfed7c2c5f71d8ee4964efb7a089072d476ee64  Nanocashcoin-Qt.dmg
+    dc98844b64c8b44746d1f3604cb5f53ac56397b77150cc4cbc459081036d5d76  Nanocashcoin-Qt.dmg
     12b972b2221744dc440f46b1effe44ca55c54e602b1b7f4e081b2f227ed641db  readme.txt
     11f006809d8da1021bb9cdcc8f4e824e16d37ed79801100044ceba2caaf0eedf  src/.gitattributes
     68f240aa20dcefa25ab5062be5f63d0c9f9220589dac42ad13c9d7d23a648332  src/.gitignore
@@ -70,14 +70,14 @@
     cbb7ad420515cc46d874fc3c7a1f2834e0d374db96edd6e1284fcad0bd75eb24  src/contrib/gitian-downloader/win32-download-config
     07c95e99046c7554cfce39f4a300329770b259350e3cf033ada7f79430b101d4  src/contrib/gitian-downloader/wtogami-key.pgp
     1e82b1171ffc3a3aab67a33a7e5b7c5d42498fd94a9737dfd3efcfb7f3ad68a2  src/contrib/gitian-keys/keys.txt
-    ee997c7c49566ae3da03532a934003845c8b4fb8308ecba982abc938dd42e266  src/contrib/gitian.sigs/0.6.1-linux/developer/nanocashcoin-build.assert
-    022e0ae2db5a814955a152f7c300f49ad18a866e3f2fe4f448e9a820b847bfe8  src/contrib/gitian.sigs/0.6.1-osx-unsigned/developer/nanocashcoin-build.assert
-    1772532edc83120d13dc02efd0be31ae659cc2e0b90d90faac94e3cef1e190e0  src/contrib/gitian.sigs/0.6.1-win-unsigned/developer/nanocashcoin-build.assert
+    ed0f06840b069daecc7d6d19b832e6fe931768a454ebc36173ded3f89efce138  src/contrib/gitian.sigs/0.6.1.0-linux/developer/nanocashcoin-build.assert
+    7f79d39f3145dcbf4caf9c0a7de1206402a0dbfd72089ea73c0d0228b7df7fae  src/contrib/gitian.sigs/0.6.1.0-osx-unsigned/developer/nanocashcoin-build.assert
+    f793278b30f8c95de444fb4906a1a633f4ea1e6b8b1cfe727437c3b6ecfa3a2a  src/contrib/gitian.sigs/0.6.1.0-win-unsigned/developer/nanocashcoin-build.assert
     93b6dedefe70c40587a51602464249991e07cf68ae9cdb21e5799b8679bd05c8  src/contrib/homebrew/bitcoin.qt.pro.patch
     5d49268b2af280ecf51cb3c2ca4f82798997d3bcb875d40d7f72032c7d99a47a  src/contrib/homebrew/makefile.osx.patch
     8423b6c87f2c21ef317533af97aae5e52cd456673768fa934830a181475cc9a1  src/contrib/macdeploy/DS_Store
     8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903  src/contrib/macdeploy/LICENSE
-    082ab25bb8017c295e1a1a6ca74854a09a88b669c688784bade67ed6e22a68b1  src/contrib/macdeploy/background.png
+    fb8ace1cd6b9f01ba94514a69991727ab99a9badc8e1e227a4ed76f6bfc5f78c  src/contrib/macdeploy/background.png
     5a5b77fde2ce42b4f0e48af335c48f2b24d5fea88b32b11a7e79f6f92f1ce7c0  src/contrib/macdeploy/background.psd
     2532140abfbc310be28d9335285248d05c75f5cba9df6b2d15e84c96da97bde8  src/contrib/macdeploy/fancy.plist
     b7aedceba210a8396f27b41da18d442e186b404f83f7919f465b0e5a5a58da68  src/contrib/macdeploy/macdeployqtplus
@@ -682,10 +682,10 @@
     a1c65ac0090faca650310d69413bee9c01c2c1fea7dc07b452ead7faaca0b379  src/src/walletdb.h
 - in_manifest: |-
     482c3b804ad0c7a469c2250ab523cdecc5567412a138f12d75ec1fc50b433bbd  nanocashcoin-desc.yml
-    cf5e5c8704824e83f1eb8fa480e84ad240aa2aa391ad0a4aee73943e2a32d1b0  qt-osx-5.5.0-gitian.tar.xz
+    c4ca7c4c13db43443587387b2343932fe6bf0d839d3af854ecbd0aca17a7836d  qt-osx-5.5.0-gitian.tar.xz
     12055987424152db9b5034f752071865da4c586df2b4b1013cf62046703b97b4  nanocashcoin-deps-osx-gitian-r1.tar.xz
     6ec5b0e1ed208813fde90894cf4e483d208fb052c13d7ce0a364be1fa7bd2e91  osxcross.tar.xz
-    git:b0dd38c373fa25ee527bac0fe140b33a5591a74b nanocashcoin
+    git:1d9256ab2a2d9866eb19e31ba108739cd74d9a4c nanocashcoin
 - base_manifests: !omap
   - trusty-amd64: |
       a7ca9f22df6e91ae67a5ec1d7f83734fa9dbb103ec2d62d65397a40a416d78a3  accountsservice_0.6.35-0ubuntu7.3_amd64.deb
