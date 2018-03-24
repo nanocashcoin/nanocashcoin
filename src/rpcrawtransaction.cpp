@@ -79,7 +79,6 @@ void TxToJSON(const CTransaction& tx, const uint256 hashBlock, Object& entry)
 {
     entry.push_back(Pair("txid", tx.GetHash().GetHex()));
     entry.push_back(Pair("version", tx.nVersion));
-    entry.push_back(Pair("time", (boost::int64_t)tx.nTime));
     entry.push_back(Pair("locktime", (boost::int64_t)tx.nLockTime));
     Array vin;
     BOOST_FOREACH(const CTxIn& txin, tx.vin)
@@ -114,6 +113,7 @@ void TxToJSON(const CTransaction& tx, const uint256 hashBlock, Object& entry)
     }
     entry.push_back(Pair("vout", vout));
 
+    bool timeAdded = false;
     if (hashBlock != 0)
     {
         entry.push_back(Pair("blockhash", hashBlock.GetHex()));
@@ -123,6 +123,7 @@ void TxToJSON(const CTransaction& tx, const uint256 hashBlock, Object& entry)
             CBlockIndex* pindex = (*mi).second;
             if (pindex->IsInMainChain())
             {
+				timeAdded = true;
                 entry.push_back(Pair("confirmations", 1 + nBestHeight - pindex->nHeight));
                 entry.push_back(Pair("time", (boost::int64_t)pindex->nTime));
                 entry.push_back(Pair("blocktime", (boost::int64_t)pindex->nTime));
@@ -131,6 +132,10 @@ void TxToJSON(const CTransaction& tx, const uint256 hashBlock, Object& entry)
                 entry.push_back(Pair("confirmations", 0));
         }
     }
+
+	if(!timeAdded){
+	    entry.push_back(Pair("time", (boost::int64_t)tx.nTime));
+	}
 }
 
 Value getrawtransaction(const Array& params, bool fHelp)
