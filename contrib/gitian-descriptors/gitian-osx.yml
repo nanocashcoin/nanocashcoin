@@ -24,7 +24,7 @@ remotes:
 - "url": "https://github.com/nanocashcoin/nanocashcoin.git"
   "dir": "nanocashcoin"
 files:
-- "qt-osx-5.5.0-gitian.tar.xz"
+- "nanocashcoin-qt-osx-5.5.0-gitian.tar.xz"
 - "nanocashcoin-deps-osx-gitian-r1.tar.xz"
 - "osxcross.tar.xz"
 script: |
@@ -58,7 +58,7 @@ script: |
   tar xf $BUILDDIR/osxcross.tar.xz
   mkdir -p $HOME/install
   cd $HOME/install
-  tar xf $BUILDDIR/qt-osx-5.5.0-gitian.tar.xz
+  tar xf $BUILDDIR/nanocashcoin-qt-osx-5.5.0-gitian.tar.xz
   #
   cd $BUILDDIR/nanocashcoin
   mkdir -p $OUTDIR/src

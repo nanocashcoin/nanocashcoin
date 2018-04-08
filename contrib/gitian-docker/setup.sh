@@ -29,4 +29,4 @@ cp build/out/osxcross.tar.xz inputs/
 ./bin/gbuild ../nanocashcoin/contrib/gitian-descriptors/deps-osx.yml </dev/null
 cp build/out/nanocashcoin-deps-osx-gitian-r1.tar.xz inputs/
 ./bin/gbuild ../nanocashcoin/contrib/gitian-descriptors/qt-osx.yml </dev/null
-cp build/out/qt-osx-5.5.0-gitian.tar.xz inputs/
+cp build/out/nanocashcoin-qt-osx-5.5.0-gitian.tar.xz inputs/

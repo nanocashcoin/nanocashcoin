@@ -222,4 +222,4 @@ script: |
   export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/faketime/libfaketime.so.1
   export FAKETIME=$REFERENCE_DATETIME
   find -print0 | xargs -r0 touch -h # fix up timestamps before packaging
-  find | sort | tar --no-recursion -cJf $OUTDIR/qt-osx-5.5.0-gitian.tar.xz -T -
+  find | sort | tar --no-recursion -cJf $OUTDIR/nanocashcoin-qt-osx-5.5.0-gitian.tar.xz -T -

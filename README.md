@@ -3,7 +3,7 @@ Nanocashcoin Official Development Repo
 ==================================
 
 ### What is Nanocashcoin?
-[Nanocashcoin](https://nanocashcoin.net) (abbreviated NCC), also known as NCCoin and Peer-to-Peer Coin is the first [cryptocurrency](https://en.wikipedia.org/wiki/Cryptocurrency) design introducing [proof-of-stake consensus](https://nanocashcoin.net/assets/paper/nanocashcoin-paper.pdf) as a security model, with a combined [proof-of-stake](https://nanocashcoin.net/assets/paper/nanocashcoin-paper.pdf)/[proof-of-work](https://en.wikipedia.org/wiki/Proof-of-work_system) minting system. Nanocashcoin is based on [Bitcoin](https://bitcoin.org), while introducing many important innovations to cryptocurrency field including new security model, energy efficiency, better minting model and more adaptive response to rapid change in network computation power.
+[Nanocashcoin](https://nanocashcoin.net) (abbreviated NCC), also known as NCCoin and Peer-to-Peer Coin is based on design introducing [proof-of-stake consensus](https://nanocashcoin.net/assets/paper/nanocashcoin-paper.pdf) as a security model, with a combined [proof-of-stake](https://nanocashcoin.net/assets/paper/nanocashcoin-paper.pdf)/[proof-of-work](https://en.wikipedia.org/wiki/Proof-of-work_system) minting system. Nanocashcoin is based on [Bitcoin](https://bitcoin.org), while introducing many important innovations to cryptocurrency field including new security model, energy efficiency, better minting model and more adaptive response to rapid change in network computation power.
 
 ### Nanocashcoin Resources
 * Client and Source:

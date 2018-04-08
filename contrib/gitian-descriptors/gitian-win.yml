@@ -71,7 +71,7 @@ script: |
     cp -f release/nanocashcoin-qt.exe $BINDIR/
 
     cd src
-    make -f makefile.linux-mingw $MAKEOPTS HOST=$HOST DEPSDIR=$STAGING nanocashcoind.exe USE_UPNP=0 DEBUGFLAGS="-frandom-seed=nu"
+    make -f makefile.linux-mingw $MAKEOPTS HOST=$HOST DEPSDIR=$STAGING nanocashcoind.exe USE_UPNP=0 DEBUGFLAGS="-frandom-seed=nu" LDFLAGS="-static-libgcc -static-libstdc++"
     ${HOST}-strip nanocashcoind.exe
     cp -f nanocashcoind.exe $BINDIR/
 
